@@ -467,7 +467,12 @@ h6 {
     width: 100%;
     align-items: center;
     display: flex;
-    position: relative;
+    position: initial;
+    // display: flex;
+    // position: initial;
+    // justify-content: center;
+    // margin: auto;
+    // width: 100%;
   }
 
   footer {
