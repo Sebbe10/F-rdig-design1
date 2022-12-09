@@ -126,6 +126,16 @@ aside .nummer {
   width: 50%;
 }
 
+aside .bi-quote::before {
+  font-size: 55px;
+  display: flex;
+  position: relative;
+  rotate: 180deg;
+  bottom: 20px;
+  color: black;
+  justify-content: end;
+}
+
 i.bi-arrow-down-short {
   display: none;
 }
@@ -135,6 +145,12 @@ i.bi-arrow-down::before {
 
 .bi-arrow-down-circle {
   display: none;
+}
+
+.bi-arrow-up-circle-fill {
+  position: relative;
+  display: block;
+  top: 200px;
 }
 
 #about {
@@ -176,16 +192,6 @@ html {
   right: 10px;
 }
 
-aside .bi-quote::before {
-  font-size: 55px;
-  display: flex;
-  position: relative;
-  rotate: 180deg;
-  bottom: 20px;
-  color: black;
-  justify-content: end;
-}
-
 .iconer {
   display: flex;
   position: absolute;
@@ -224,15 +230,6 @@ footer {
   top: 280px;
 }
 
-h1 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  color: #000;
-  top: 240px;
-}
-
 img {
   display: flex;
   position: relative;
@@ -242,6 +239,15 @@ img {
   border-radius: 50%;
   top: 220px;
   box-shadow: v.$shadow;
+}
+
+h1 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  color: #000;
+  top: 240px;
 }
 
 h6 {
@@ -258,12 +264,6 @@ h6 {
   font-size: 9px;
   border-radius: 10px;
   top: 230px;
-}
-
-.bi-arrow-up-circle-fill {
-  position: relative;
-  display: block;
-  top: 200px;
 }
 
 @media screen and (max-width: 600px) {
@@ -292,6 +292,10 @@ h6 {
     margin: auto;
   }
 
+  .bi-arrow-up-circle-fill {
+    display: none;
+  }
+
   aside .bi-quote:before {
     color: #000;
     justify-content: end;
@@ -300,10 +304,6 @@ h6 {
     position: relative;
     bottom: 75px;
     rotate: 180deg;
-  }
-
-  .bi-arrow-up-circle-fill {
-    display: none;
   }
 
   p {
