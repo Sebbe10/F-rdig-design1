@@ -159,14 +159,14 @@ a {
   position: relative;
   color: white;
   margin: auto;
-  font-size: 50px;
+  font-size: 55px;
   top: 150px;
 }
 
 .bi-arrow-down-short {
   display: flex;
   background-color: black;
-  font-size: 65px;
+  font-size: 55px;
   border-radius: 50%;
   margin: auto;
 }
@@ -210,21 +210,12 @@ img {
   box-shadow: v.$shadow;
 }
 
-.bi-quote:before {
-  color: #000;
-  justify-content: end;
-  font-size: 55px;
-  display: flex;
-  position: relative;
-  bottom: 75px;
-  rotate: 180deg;
-}
-
 .bi-quote {
   display: flex;
   position: relative;
-  left: auto;
-  top: 50px;
+  font-size: 55px;
+  rotate: 180deg;
+  bottom: 20px;
 }
 
 h6 {
@@ -286,18 +277,13 @@ footer {
     background-size: cover;
   }
 
-  .fa-solid {
+  .thetext {
+    color: #fff;
+    min-height: 89px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
     display: flex;
-    position: relative;
-    color: white;
-    margin: auto;
-    font-size: 60px;
-  }
-
-  .divhuvudnummer {
-    flex-flow: wrap;
-    display: flex;
-    width: 100%;
   }
 
   .top-nav {
@@ -306,52 +292,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    display: none;
-  }
-
-  div i.bi-arrow-down-short {
-    border-radius: 50%;
-    margin: auto;
-    font-size: 65px;
-    color: white;
-    display: flex;
-    position: relative;
-  }
-
-  a:after {
-    background-color: white;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-  }
-
-  a:hover:after {
-    width: 100%;
-  }
-
-  .bi-arrow-down-circle-fill::before {
-    display: block;
-    margin: 0 auto;
-    align-items: center;
-    font-size: 75px;
-    position: absolute;
-    justify-content: center;
-    bottom: -150px;
-    margin: auto;
-  }
-
-  h5 {
-    color: #000;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-size: 30px;
-    display: flex;
-  }
-
-  section {
     display: none;
   }
 
@@ -374,38 +314,42 @@ footer {
     width: 100%;
   }
 
-  .thetext {
-    color: #fff;
-    min-height: 89px;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+  aside {
     display: flex;
+    flex-flow: wrap;
   }
 
-  p {
-    font-size: 18px;
-  }
-
-  .mail {
+  .fa-solid {
     display: flex;
     position: relative;
     color: white;
-    font-size: 18px;
-    align-items: center;
-    justify-content: center;
-    bottom: 90px;
+    margin: auto;
+    font-size: 60px;
   }
 
-  div.infotext {
-    width: 100%;
+  .bi-arrow-down-short {
+    border-radius: 50%;
+    margin: auto;
+    font-size: 65px;
+    color: white;
+    display: flex;
     position: relative;
+  }
+
+  h5 {
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 30px;
     display: flex;
   }
 
-  aside {
+  .divhuvudnummer {
     flex-flow: wrap;
     display: flex;
+    width: 100%;
   }
 
   .nummer {
@@ -416,81 +360,13 @@ footer {
     position: relative;
     flex-direction: column;
   }
-  aside .bi-quote::before {
-    font-size: 55px;
+
+  h1 {
     display: flex;
     position: relative;
-    rotate: 180deg;
-    bottom: 80px;
-    color: black;
-    justify-content: end;
-  }
-
-  i.bi-arrow-down-short {
-    display: none;
-  }
-  i.bi-arrow-down::before {
-    display: none;
-  }
-
-  .bi-arrow-down-circle {
-    display: none;
-  }
-
-  .bi-arrow-up-circle-fill {
-    position: relative;
-    display: block;
-    top: -80px;
-  }
-  .bi-arrow-down-circle-fill {
-    display: none;
-  }
-  #about {
-    margin-top: 3%;
-  }
-
-  #downtodown {
-    display: none;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  #down {
-    margin-top: 24%;
-    padding-bottom: 25%;
-  }
-
-  .infotext {
-    justify-content: start;
-    display: flex;
-    position: relative;
-    top: 50px;
-    justify-content: space-around;
-  }
-  .kontakta {
-    display: flex;
-    position: relative;
-    bottom: 150px;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
-  }
-
-  #contact {
-    display: flex;
-    position: relative;
-    right: 10px;
-  }
-
-  footer {
-    height: 300px;
-    width: 100%;
-    background-color: #000;
-    flex-direction: column;
-    gap: 10px;
-    display: block;
-    position: relative;
+    color: #000;
   }
 
   img {
@@ -500,14 +376,6 @@ footer {
     width: 250px;
     border-radius: 50%;
     box-shadow: v.$shadow;
-  }
-
-  h1 {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    color: #000;
   }
 
   h6 {
@@ -522,5 +390,29 @@ footer {
     align-items: center;
     font-size: 9px;
     border-radius: 10px;
+  }
+
+  .bi-quote::before {
+    display: flex;
+    position: relative;
+    display: flex;
+    position: relative;
+    color: black;
+  }
+
+  .infotext {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    background-color: #000;
   }
 }
